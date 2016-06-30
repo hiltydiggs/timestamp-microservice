@@ -1,5 +1,5 @@
 var express = require("express"),
-    path = process.env.PORT || 3000,
+    path = process.env.port || 3000,
     base = require("./base"),
     dateVar = require("./dateVar");
 
