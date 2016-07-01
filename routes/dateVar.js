@@ -25,7 +25,9 @@ router.get("/", function(req, res) {
   };
 
   if (resObj.unix === null || resObj.natural === "Invalid date") {
-    res.send("Not a valid date string/integer");
+    resObj.unix = null;
+    resObj.natural = null;
+    res.send(resObj);
   } else {
     res.send(resObj);
   }
