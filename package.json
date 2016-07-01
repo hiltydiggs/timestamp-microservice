@@ -4,14 +4,12 @@
   "description": "Routing with Node",
   "main": "routes/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node routes/index.js"
   },
   "author": "Dan Logajan",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  },
-  "scripts": {
-    "start": "node routes/index.js"
+    "express": "^4.14.0",
+    "moment": "^2.13.0"
   }
 }
