@@ -7,7 +7,7 @@ var app = express();
 
 app.use("/", base);
 app.use("/index.html", base);
-app.use(express.static(__dirname + "/../styles"));
+app.use(express.static("/../styles"));
 app.use("/*", dateVar);
 
 app.listen(path);
