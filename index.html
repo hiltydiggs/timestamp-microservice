@@ -4,11 +4,22 @@
     <title>Timestamp Microservice</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   </head>
-  <body>
-    <h2>Timestamp Microservice</h2>
-    <h4>About:</h4>
-    <p>A practice project from the curriculum of <a href="http://freecodecamp.com/">freeCodeCamp</a>. Uses Node.js and Express for routing and return. The source code for the entire project can be seen on GitHub here:<br /><a href="https://github.com/hiltydiggs/timestamp-microservice">https://github.com/hiltydiggs/timestamp-microservice</a></p>
-    <h4>Usage:</h4>
-    <p>http://timestamp-microservice.azurewebsites.net</p>
+  <body class="body">
+    <main class="container">
+      <h2>Timestamp Microservice</h2>
+      <h4>About:</h4>
+      <p>A practice project from the curriculum of <a href="http://freecodecamp.com/">freeCodeCamp</a>. Uses Node.js and Express for routing and return. The source code for the entire project can be seen on GitHub here: <a href="https://github.com/hiltydiggs/timestamp-microservice">https://github.com/hiltydiggs/timestamp-microservice</a></p>
+      <h4>Usage:</h4>
+      <p>Accepts base URL + integer (up to 12 digits) or base URL + date string and returns a JSON object with Unix formatted time (seconds before or after January 1, 1970) and naturally read time ("September 1, 1999").</p>
+      <h4>Examples:</h4>
+      <p>URL: <a href="http://timestamp-microservice.azurewebsites.net/3456789012">http://timestamp-microservice.azurewebsites.net/3456789012</a></p>
+      <p>Returns: {"unix":3456789012,"natural":"July 17, 2079"}</p>
+      <hr />
+      <p>URL: <a href="http://timestamp-microservice.azurewebsites.net/610606080">http://timestamp-microservice.azurewebsites.net/610606080</a></p>
+      <p>Returns: {"unix":610606080,"natural":"May 8, 1989"}</p>
+      <hr />
+      <p>URL: <a href="http://timestamp-microservice.azurewebsites.net/trees">http://timestamp-microservice.azurewebsites.net/trees</a></p>
+      <p>Returns: {"unix":null,"natural":null}</p>
+    </main>
   </body>
 </html>
