@@ -1,15 +1,13 @@
 var express = require("express"),
-    path = process.env.port || 3000,
-    base = require("./base"),
+    port = process.env.port || 3000,
+    path = require("path"),
     dateVar = require("./dateVar");
 
 var app = express();
 
-app.use("/", base);
-app.use("/index.html", base);
-app.use(express.static("/../styles"));
+app.use(express.static(path.join(__dirname + "/../")));
 app.use("/*", dateVar);
 
-app.listen(path);
+app.listen(port);
 
-console.log("Running on port: " + path);
+console.log("Running on port: " + port);
